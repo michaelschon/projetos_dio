@@ -70,3 +70,48 @@ drwxrwx---. 1 root GRP_ADM 0 Aug 13 21:10 /adm
 drwxrwx---. 1 root GRP_VEN 0 Aug 13 21:10 /ven
 drwxrwx---. 1 root GRP_SEC 0 Aug 13 21:10 /sec
 
+configure-server.sh => implementa o webserver solicitado no bootcamp
+
+OUTPUT:
+
+sudo ./configure_server.sh
+Fazendo update do ambiente
+Last metadata expiration check: 1:37:25 ago on Sat 13 Aug 2022 07:51:24 PM -03.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Instalando pacotes
+Last metadata expiration check: 1:37:27 ago on Sat 13 Aug 2022 07:51:24 PM -03.
+Package unzip-6.0-57.fc36.x86_64 is already installed.
+Package httpd-2.4.54-3.fc36.x86_64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Inicializando o serviço
+Liberando regra de firewall
+success
+success
+Liberando permissão no SELinux
+ValueError: Port tcp/80 already defined
+Baixando website..
+--2022-08-13 21:28:54--  https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip
+Resolving github.com (github.com)... 20.201.28.151
+Connecting to github.com (github.com)|20.201.28.151|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/denilsonbonatti/linux-site-dio/zip/refs/heads/main [following]
+--2022-08-13 21:28:54--  https://codeload.github.com/denilsonbonatti/linux-site-dio/zip/refs/heads/main
+Resolving codeload.github.com (codeload.github.com)... 20.201.28.149
+Connecting to codeload.github.com (codeload.github.com)|20.201.28.149|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 17218148 (16M) [application/zip]
+Saving to: ‘/var/www/html/main.zip’
+
+main.zip                                 100%[=================================================================================>]  16.42M  10.8MB/s    in 1.5s
+
+2022-08-13 21:28:56 (10.8 MB/s) - ‘/var/www/html/main.zip’ saved [17218148/17218148]
+
+Descompactando arquivo
+Movendo arquivos...
+Removendo arquivos desnecessarios...
+Ajustando permissões
+
